@@ -1,0 +1,27 @@
+:root {
+    --azulFondo: #202633;
+    --azulTabs: #31394c;
+    --letterWhite: #ffffff;
+    --letterGray: #5e6473;
+    --background: #212734;
+}
+
+/*fonts*/
+
+
+
+.title {
+    color: var(--letterWhite);
+    font-size: 100pt;
+}
+
+#container {
+    width: 1370px;
+    margin: 0 auto;
+    background: var(--background);
+}
+
+#container .wrapper {
+    padding: 0;
+    margin: 0;
+}
