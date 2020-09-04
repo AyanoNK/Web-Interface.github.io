@@ -37,6 +37,8 @@
 #menu-container {
     width: 199.99px;
     height: 940px;
+    display: inline-block;
+    background: var(--background);
 }
 
 #menu-container .wrapper {
@@ -48,6 +50,7 @@
     width: 1370px;
     margin: 0 auto;
     background: var(--background);
+    display: inline-block;
 }
 
 #container .wrapper {
