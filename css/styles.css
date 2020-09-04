@@ -60,7 +60,8 @@
 
 .small-content-box {
     width: 160px;
-    margin: 20px;
+    height: 160px;
+    margin: 30px;
     background: var(--azulTabs);
     display: inline-block;
     text-align: center;
@@ -69,6 +70,7 @@
 .small-content-titles {
     font-family: "robotomedium";
     color: var(--letterGray);
+    font-size: 14px;
 }
 
 .small-content-content {
@@ -114,6 +116,8 @@
     color: var(--letterWhite);
 }
 
+
+
 table, th, td {
     border: 1px solid var(--azulTabs);
     width: 100%;
@@ -126,3 +130,8 @@ table {
 th {
     width: 50px;
 }
+
+p, h3 {
+    margin: 16px;
+}
+
