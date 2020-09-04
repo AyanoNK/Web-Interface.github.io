@@ -34,6 +34,16 @@
     font-family: "robotobold";
 }
 
+#menu-container {
+    width: 199.99px;
+    height: 940px;
+}
+
+#menu-container .wrapper {
+    padding: 0;
+    margin: 0;
+}
+
 #container {
     width: 1370px;
     margin: 0 auto;
