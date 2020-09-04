@@ -49,10 +49,11 @@
 
 #container {
     width: 1370px;
-    margin: 0 auto;
+    margin: auto;
     background: var(--background);
     display: inline-block;
 }
+
 
 #container .wrapper {
     padding: 0;
