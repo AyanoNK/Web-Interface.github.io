@@ -39,6 +39,7 @@
     height: 940px;
     display: inline-block;
     background: var(--background);
+    color: #ffffff;
 }
 
 #menu-container .wrapper {
