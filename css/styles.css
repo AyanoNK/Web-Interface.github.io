@@ -3,6 +3,7 @@
     --azulTabs: #31394c;
     --letterWhite: #ffffff;
     --letterGray: #6f7582;
+    --letterGrayAlt: #999999;
     --background: #212734;
 }
 
@@ -47,11 +48,14 @@
     margin: 0;
 }
 
+
+
 #container {
     width: 1370px;
     margin: auto;
     background: var(--background);
     display: inline-block;
+    align-items: center;
 }
 
 
@@ -71,6 +75,7 @@
     color: var(--letterWhite);
     text-decoration: none;
     font-family: "robotobold";
+    text-align: center;
 }
 
 .small-content-box {
@@ -94,14 +99,6 @@
     color: var(--letterWhite);
 }   
 
-
-.large-content-box {
-    width: 1110px;
-    height: 280px;
-    margin: 20px;
-    background: var(--azulTabs);
-    display: inline-block;
-}
 
 .large-content-titles {
     font-family: "robotomedium";
@@ -150,3 +147,81 @@ p, h3 {
     margin: 16px;
 }
 
+.square-container {
+    display: grid;
+    height: 100px;
+    /*valores rem relativos al elemento html*/
+    /*si el root element es 16px, entonces 1 rem = 16px*/
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: lightblue;
+    color: #ffffff;
+    place-items: center;
+}
+
+.parentcontentbox {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+}
+
+.childcontentbox {
+    /*'flex-grow' 'flex-shrink' 'flex-basis'*/
+    flex: 1 1 160px;
+    margin: 30px;
+    background: var(--azulTabs);
+    height: 160px;
+    color: var(--letterWhite);
+    text-align: center;
+}
+
+.bodybackground {
+    background-color: var(--azulFondo);
+}
+
+.mainparent {
+    display: grid;
+    margin: auto;
+    width: 1440px;
+    height: 1180px;
+    border: 1px solid red;
+    
+    overflow: auto;
+}
+
+.mainchild {
+    width: 1110px;
+    height: 1030px;
+    border: 1px solid var(--azulTabs);
+    background: var(--azulTabs);
+    text-align: center;
+}
+
+.chatdash {
+    width: 1440px;
+    height: 90px;
+    border: 1px solid var(--azulTabs);
+    background: var(--azulTabs);
+    text-align: center;
+    font-family: "robotomedium";
+    color: var(--letterGrayAlt);
+}
+
+.parentsizabletabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.childsizabletabs {
+    flex: 0 1 auto;
+    margin: 0px;
+    background: lightpink;
+}
+
+.chatcontacts {
+    width: 268px;
+    height: 1030px;
+    border: 1px solid var(--azulTabs);
+    text-align: center;
+}

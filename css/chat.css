@@ -1,0 +1,116 @@
+:root {
+    --azulFondo: #202633;
+    --azulTabs: #31394c;
+    --blancoLetra: #ffffff;
+    --grisLetra: #999999;
+    --bordeColor: #3d465e;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: "robotomedium";
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "robotobold";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--azulFondo);
+}
+
+
+#topcontainer {
+    width: 1440px;
+    height: 90px;
+    margin: auto;
+    background-color: var(--azulTabs);
+    overflow: auto;
+    font-size: 16pt;
+    font-family: "robotomedium";
+    color: var(--blancoLetra);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--bordeColor);
+}
+
+#maincontainer {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.childcontacts {
+    flex: 0 1 270px;
+    height: 1092px;
+    border-right: 2px solid var(--bordeColor);
+}
+
+.contactbox {
+    flex: 0 0 268px;
+    height: 70px;
+}
+
+.boximage {
+    flex: 0 0 70px;
+    height: 70px;
+    float: left;
+    line-height: 100px;
+    margin-left: 30px;
+}
+
+.boxcontent {
+    flex: 0 0 200px;
+    height: 70px;
+    margin: auto;
+    margin-left: 90px;
+}
+
+.boxcontent h3 {
+    font-family: "robotomedium";
+    color: var(--blancoLetra);
+    font-size: 10pt;
+    margin: 0px;
+    padding: 3px;
+    margin: 0;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.boxcontent p {
+    font-family: "robotomedium";
+    color: var(--grisLetra);
+    font-size: 9pt;
+    margin: 0px;
+    margin: 0;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#selected {
+    background-color: var(--azulTabs);
+}
+
+.childchat {
+    flex: 0 1 1108px;
+    height: 1030px;
+    margin: 30px;
+    background-color: var(--azulTabs);
+}
+
