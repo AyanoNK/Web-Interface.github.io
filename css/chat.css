@@ -167,6 +167,7 @@ border-left: 2px solid var(--bordeColor);
     background-color: transparent;
     color: var(--grisLetra);
     outline: none;
+    cursor:pointer;
 }
 
 #texterparent {
@@ -319,7 +320,48 @@ border-left: 2px solid var(--bordeColor);
 .chatimages {
     flex: 0 1 284px;
     height: 722px;
-    background-color: pink;
-    margin-left: 1px;
 }
 
+.imagesparent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagesimg {
+    text-align: right;
+    flex: 0 0 60px;
+    height: 100px;
+    line-height: 105px;
+}
+
+.imagestext {
+    flex: 0 0 194px;
+    height: 100px;
+    padding-left: 30px;
+    line-height: 98px;
+    font-family: "robotomedium";
+    font-size: 10pt;
+    color: var(--blancoLetra);
+}
+
+.imagestext img {
+    display: inline;
+    padding: 0 5px 0 5px;
+}
+
+.imagesimages {
+    flex: 0 0 284px;
+    height: 622px;
+}
+
+.imagegallery {
+    margin-left: 14px;
+    width: 255px;
+    height: 542px;
+    text-align: center;
+}
+
+.imagegallery img {
+    display: inline;
+    padding: 3px 3px 3px 3px;
+}
