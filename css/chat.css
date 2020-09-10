@@ -28,18 +28,11 @@ body {
 }
 
 
-#topcontainer {
-    width: 1440px;
+.topcontainer {
+    flex: 0 0 1440px;
     height: 90px;
     margin: auto;
     background-color: var(--azulTabs);
-    overflow: auto;
-    font-size: 16pt;
-    font-family: "robotomedium";
-    color: var(--blancoLetra);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-bottom: 2px solid var(--bordeColor);
 }
 
@@ -51,6 +44,42 @@ body {
 .parent {
     display: flex;
     flex-wrap: wrap;
+}
+
+.navicon {
+    flex: 0 0 100px;
+    height: 90px;
+    padding: 0 0 0 0;
+}
+
+.navicon img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 39px 0 0 0;
+}
+
+.naviconlogo {
+    flex: 0 0 900px;
+    height: 90px;
+}
+
+.naviconlogo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0 0 90px;
+}
+
+.navtext {
+    flex: 0 0 120px;
+    height: 90px;
+    font-family: "robotomedium";
+    color: var(--grisLetra);
+
+    font-size: 12pt;
+    text-align: center;
+    line-height: 90px;
 }
 
 .childcontacts {
