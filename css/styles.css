@@ -192,10 +192,54 @@ a {
 }
 .contacts {
     flex: 0 0 196px;
-    height: 540px;
-    background-color: blue;
+    height: 536px;
+    border-top: 2px solid var(--bordeColor);
+    border-bottom: 2px solid var(--bordeColor);
 }
 
+.contactstitle {
+    flex: 0 0 196px;
+    height: 70px;
+    font-family: "robotomedium";
+    color: var(--grisLetra);
+    padding-left: 30px;
+    line-height: 80px;
+}
+
+.contactbox {
+    flex: 0 0 196px;
+    height: 70px;
+}
+
+.boximage {
+    flex: 0 0 70px;
+    height: 70px;
+    float: left;
+    line-height: 100px;
+    margin-left: 30px;
+}
+
+.boxcontent {
+    flex: 0 0 200px;
+    height: 70px;
+    margin: auto;
+    margin-left: 90px;
+}
+
+.boxcontent h3 {
+    font-family: "robotomedium";
+    color: var(--blancoLetra);
+    font-size: 9pt;
+    margin: 0px;
+    padding: 0px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+/*bottom icons*/
 .additionalgarbage {
     flex: 0 0 196px;
     height: 70px;
