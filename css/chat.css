@@ -4,6 +4,7 @@
     --blancoLetra: #ffffff;
     --grisLetra: #999999;
     --bordeColor: #3d465e;
+    --botonAzul: #0078ff;
 }
 
 /*fonts*/
@@ -141,7 +142,7 @@ border-left: 2px solid var(--bordeColor);
     justify-items: center;
     align-items: center;
     font-family: "robotomedium";
-    font-size: 12pt;
+    font-size: 10pt;
     
     line-height: 100px;
     color: var(--blancoLetra);
@@ -155,13 +156,98 @@ border-left: 2px solid var(--bordeColor);
     display: table;
 }
 .chathundred button {
-    float: right;  
-    margin: 2rem 20px 0 0; 
+    float: right;
+    margin: -70px 20px 0 0; 
     font-family: "robotobold";
     border-radius: 20px;
+    font-size: 9pt;
     width: 105px;
     height: 40px;
+    border: 1px solid var(--bordeColor);
+    background-color: transparent;
+    color: var(--grisLetra);
+    outline: none;
+}
 
+#texterparent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texterselfimage {
+    flex: 0 1 60px;
+    height: 100px;
+    line-height: 127px;
+    padding-left: 30px;
+}
+
+.texterinput {
+    flex: 0 1 625px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.texterinput input {
+    width: 600px;
+    background-color: transparent;
+    font-family: "robotomedium";
+    font-size: 14px;
+    color: var(--blancoLetra);
+    border: transparent;
+    outline: none;
+}
+.texterinput input::placeholder {
+    color: var(--blancoLetra);
+}
+
+.texteremoji {
+    flex: 0 1 45px;
+    height: 60px;
+    padding: 40px 0 0 0;
+}
+
+.texteremoji img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textercontactimg {
+    flex: 0 1 60px;
+    height: 100px;
+    line-height: 127px;
+}
+
+#senderparent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.senderuploaders {
+    flex: 0 1 600px;
+    height: 100px;
+    line-height: 105px;
+    padding-left: 30px;
+}
+
+.senderuploaders img {
+    display: inline;
+    padding: 0 5px 0 5px;
+}
+
+.senderbutton {
+    flex: 0 0 192px;
+    height: 100px;
+}
+
+.senderbutton button {
+    background-color: var(--botonAzul);
+    margin: 25px 20px 0 0px;
+    width: 95px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: "robotobold";
+    color: var(--blancoLetra);
 }
 
 .chatmain {
@@ -178,13 +264,62 @@ border-left: 2px solid var(--bordeColor);
 
 .chatprofile {
     flex: 0 1 284px;
-    height: 358px;
-    background-color: blue;
+    height: 306px;
     border-bottom: 2px solid var(--bordeColor);
 }
 
+.profileparent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profileinfo {
+    flex: 0 1 284px;
+    height: 220px;
+    text-align: center;
+    font-family: "robotomedium";
+}
+
+.profileinfo img {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 30%;
+}
+
+.profileinfo h5 {
+    line-height: 30px;
+    display: inline;
+    color: var(--blancoLetra);
+    font-size: 10pt;
+}
+
+.profileinfo p {
+    display: inline;
+    line-height: 30px;
+    color: var(--grisLetra);
+    font-size: 8pt;
+}
+
+.friendgester {
+    flex: 0 1 284px;
+    height: 85px;
+    line-height: 90px;
+    text-align: center;
+}
+
+.friendgester img {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+
 .chatimages {
     flex: 0 1 284px;
-    height: 670px;
+    height: 722px;
     background-color: pink;
+    margin-left: 1px;
 }
+
