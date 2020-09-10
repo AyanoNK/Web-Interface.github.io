@@ -107,6 +107,11 @@ body {
     background-color: var(--azulTabs);
 }
 
+.newparent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .childchat {
     flex: 0 1 1108px;
     height: 1030px;
@@ -114,3 +119,72 @@ body {
     background-color: var(--azulTabs);
 }
 
+.chatspace {
+flex: 0 1 822px;
+}
+
+.extraspace {
+flex: 0 1 284px;
+height: 1030px;
+border-left: 2px solid var(--bordeColor);
+}
+
+.chathundred {
+    flex: 0 1 822px;
+    height: 100px;
+
+}
+
+.chathundred p {
+    margin: 0px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    font-family: "robotomedium";
+    font-size: 12pt;
+    
+    line-height: 100px;
+    color: var(--blancoLetra);
+}
+
+.chathundred img {
+    margin-right: 10px;
+}
+
+.buttonpreparator {
+    display: table;
+}
+.chathundred button {
+    float: right;  
+    margin: 2rem 20px 0 0; 
+    font-family: "robotobold";
+    border-radius: 20px;
+    width: 105px;
+    height: 40px;
+
+}
+
+.chatmain {
+    flex: 0 1 822px;
+    height: 724px;
+    background-color: lightskyblue;
+    border-top: 2px solid var(--bordeColor);
+    border-bottom: 2px solid var(--bordeColor);
+}
+
+#borderbottom {
+    border-bottom: 2px solid var(--bordeColor);
+}
+
+.chatprofile {
+    flex: 0 1 284px;
+    height: 358px;
+    background-color: blue;
+    border-bottom: 2px solid var(--bordeColor);
+}
+
+.chatimages {
+    flex: 0 1 284px;
+    height: 670px;
+    background-color: pink;
+}
