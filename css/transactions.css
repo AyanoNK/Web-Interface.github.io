@@ -5,6 +5,7 @@
     --grisLetra: #999999;
     --bordeColor: #3d465e;
     --botonAzul: #0078ff;
+    --numeroVerde: #2ccc71
 }
 
 /*fonts*/
@@ -26,6 +27,12 @@
 body {
     background-color: var(--azulFondo);
 }
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 ul {
     text-decoration: none;
@@ -54,7 +61,7 @@ a {
 }
 
 .navicon {
-    flex: 0 0 70px;
+    flex: 0 0 90px;
     height: 90px;
     padding: 0 0 0 0;
 }
@@ -68,22 +75,20 @@ a {
 
 
 .navtitle {
-    flex: 0 0 196px;
+    flex: 0 0 158px;
     height: 90px;
     font-family: "robotobold";
     color: var(--blancoLetra);
     font-size: 12pt;
     text-align: center;
     line-height: 90px;
-    border-right: 2px solid var(--bordeColor);
     border-left: 2px solid var(--bordeColor);
 }
 
 .navcategories {
-    flex: 0 0 380px;
+    flex: 0 0 382px;
     height: 90px;
     font-family: "robotobold";
-    border-right: 2px solid var(--bordeColor);
 }
 
 .navcategories ul li {
@@ -163,133 +168,23 @@ a {
     margin: auto;
 }
 
-/*small icon column*/
-
 .iconlayout {
-    flex: 0 1 70px;
-    height: 850px;
+    flex: 0 1 90px;
+    height: 1010px;
+    padding-top: 30px;
     text-align: center;
-    margin-top: 125px;
+    border-right: 2px solid var(--bordeColor);
 }
 
 .iconlayout img {
     display: inline;
-    padding: 30px 10px 30px 10px;
+    padding: 20px 20px 20px 20px;
 }
-
-/*dashboards and contacts*/
-.dashboardcontacts {
-    flex: 0 0 196px;
-    height: 940px;
-    border-right: 2px solid var(--bordeColor);
-    border-left: 2px solid var(--bordeColor);
-}
-
-.dashboards {
-    flex: 0 0 196px;
-    height: 330px;
-}
-
-.dashboardstitle {
-    flex: 0 0 196px;
-    height: 60px;
-    font-family: "robotomedium";
-    font-size: 13px;
-    color: var(--grisLetra);
-    padding-left: 30px;
-    line-height: 80px;
-}
-
-.dashboardscontent {
-    flex: 0 0 196px;
-    height: 250px;
-    font-family: "robotomedium";
-    font-size: 13px;
-    color: var(--blancoLetra);
-    padding: 20px 0px 0 30px;
-    line-height: 33px;
-}
-
-.dashboardscontent a {
-    text-decoration: none;
-    color: var(--blancoLetra);
-}
-
-.contacts {
-    flex: 0 0 196px;
-    height: 536px;
-    border-top: 2px solid var(--bordeColor);
-    border-bottom: 2px solid var(--bordeColor);
-}
-
-.contactstitle {
-    flex: 0 0 196px;
-    height: 70px;
-    font-family: "robotomedium";
-    font-size: 13px;
-    color: var(--grisLetra);
-    padding-left: 30px;
-    line-height: 80px;
-    
-}
-
-.contactbox {
-    flex: 0 0 196px;
-    height: 70px;
-}
-
-.boximage {
-    flex: 0 0 70px;
-    height: 70px;
-    float: left;
-    line-height: 100px;
-    margin-left: 30px;
-}
-
-.boxcontent {
-    flex: 0 0 200px;
-    height: 70px;
-    margin: auto;
-    margin-left: 90px;
-}
-
-.boxcontent h3 {
-    font-family: "robotomedium";
-    color: var(--blancoLetra);
-    font-size: 9pt;
-    margin: 0px;
-    padding: 0px;
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-}
-
-/*bottom icons*/
-.additionalgarbage {
-    flex: 0 0 196px;
-    height: 70px;
-    text-align: center;
-    margin-top: 25px;
-}
-
-.additionalgarbage img {
-    display: inline;
-    padding: 0 10px 0 10px;
-}
-
-/*main stuff*/
 
 .maincontainer {
-    flex: 0 0 1110px;
-    height: 880px;
-    margin: 30px;
-}
-
-.mainupperthings {
-    flex: 0 0 1110px;
-    height: 100px;
+    flex: 0 0 1106px;
+    height: 910px;
+    margin: 30px 0 0 75px;
 }
 
 .titlelogo {
@@ -306,47 +201,27 @@ a {
 }
 
 .titlemain {
-    flex: 0 0 170px;
+    flex: 0 0 870px;
     height: 100px;
     line-height: 96px;
     font-family: "robotomedium";
     color: var(--blancoLetra);
     font-size: 10pt;
     margin-left: 10px;
-    
-}
-
-.titlecalendar {
-    flex: 0 0 695px;
-    height: 100px;
-    padding-left: 15px;
-    line-height: 100px;
-}
-
-.titlecalendar button {
-    width: 340px;
-    height: 40px;
-    font-family: "robotobold";
-    font-size: 9pt;
-    border-radius: 30px;
-    word-spacing: 30px;
-    color: var(--grisLetra);
-    background-color: transparent;
-    border: 1px solid var(--bordeColor);
-    outline: none;
-    cursor:pointer;
 }
 
 .titlewidgetadder {
     flex: 0 0 170px;
     height: 100px;
     line-height: 95px;
-    text-align: right;
+    text-align: center;
 }
 
 .titlewidgetadder button {
-    width: 140px;
+    width: 40px;
     height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-family: "robotobold";
     font-size: 9pt;
     border-radius: 30px;
@@ -357,65 +232,186 @@ a {
     cursor:pointer;
 }
 
-.squarecloser {
-    flex: 0 0 1110px;
-    height: 190px;
+
+.iconlayouttwo {
+    flex: 0 1 90px;
+    height: 1010px;
+    margin-left: 75px;
+    padding-top: 30px;
     text-align: center;
+    background-color: var(--azulTabs);
+    border-left: 2px solid var(--bordeColor);
+}
+
+.iconlayouttwo img {
+    display: inline;
+    padding: 20px 20px 20px 20px;
+}
+
+.smallgraphsspace {
+    flex: 0 0 1106px;
+    height: 165px;
     justify-content: center;
 }
 
-.squarestat {
-    flex:0 0 160px;
-    height: 160px;
-    line-height: 30px;
-    background-color: var(--azulTabs);
+.graphsboxes {
+    flex: 0 0 254px;
+    height: 135px;
     margin: auto;
-    font-family: "robotomedium";
 }
 
-.squarestat p {
-    color: var(--grisLetra);
-    font-size: 10pt;
-}
-.squarestat h3 {
-    color: var(--blancoLetra);
-    font-size: 18pt;
+.graphsboxes img {
+    height: 100%;
 }
 
-.squarestat img {
-    width: 7%;
+.secondrowcontainer {
+    flex: 0 0 1106px;
+    height: 400px;
+
 }
 
-.bigstats {
-    flex: 0 0 1110px;
+.creditcardcontainer {
+    flex: 0 0 810px;
+    height: 370px;
+    margin-right: 41px;
+}
+
+.creditcardcontainer img {
+    height: 361.63px;
+}
+
+.totalcostscontainer {
+    flex: 0 0 255px;
+    height: 370px;
+}
+
+.totalcostscontainer img {
+    height: 99.7%;
+}
+
+.thirdrowcontainer {
+    flex: 0 0 1106px;
     height: 310px;
 }
 
-.biggraphs {
-    flex: 0 0 1110px;
-    height: 280px;
+.transactionspace {
+    flex: 0 0 810px;
+    height: 310px;
+    margin-right: 41px;
+    background-color: var(--azulTabs); 
 }
 
-.biggraphs img {
-    height: 99.6%;
-    float: left;
+.menurow {
+    flex: 0 0 810px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    word-spacing: 65px;
 }
 
-.mediumgraphs {
-    flex: 0 0730px;
-    height: 280px;
+.menurow h3 {
+    display: inline;
+    font-family: "robotomedium";
+    color: var(--blancoLetra);
+    font-size: 10pt;
 }
 
-.mediumgraphs img {
-    height: 100%;
+.menurow p {
+    display: inline;
+    font-family: "robotomedium";
+    color: var(--grisLetra);
+    font-size: 10pt;
 }
 
-.smallgraphs {
-flex: 0 0 350px;
-height: 280px;
-margin-left: 30px;
+.menuitems {
+    flex: 0 0 810px;
+    height: 68px;
+    border-top: 2px solid var(--bordeColor);
+    text-align: center;
+    word-spacing: 0px;
+    font-family: "robotomedium";
+    font-size: 13px;
 }
 
-.smallgraphs img {
-    height: 100%;
+.menuitemslogo {
+    flex: 0 0 135px;
+    height: 68px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.menuitemscard {
+    flex: 0 0 100px;
+    height: 68px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+.menuitemstype {
+    flex: 0 0 96px;
+    height: 68px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+.menuitemscompany {
+    flex: 0 0 128px;
+    height: 68px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+.menuitemsdate {
+    flex: 0 0 94px;
+    height: 68px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+.menutiemsstatus {
+    flex: 0 0 110px;
+    height: 68px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+.menuitemsamount {
+    flex: 0 0 127px;
+    height: 68px;
+    text-align: center;
+    line-height: 70px;
+    color: var(--numeroVerde);
+}
+
+.menuitems p {
+    display: inline;
+    font-family: "robotomedium";
+    color: var(--blancoLetra);
+    font-size: 10pt;
+}
+
+
+.helpspace {
+    flex: 0 0 255px;
+    height: 310px;
+    background-color: var(--azulTabs);
+    color: var(--blancoLetra);
+    font-family: "robotomedium";
+    font-size: 10pt;
+}
+
+.helpspace p {
+    line-height: 35px;
+}
+
+.helpspace img {
+    margin-right: 30px;
+    margin-left: 35px;
+    height: 13px;
 }
