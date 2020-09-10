@@ -251,10 +251,11 @@ border-left: 2px solid var(--bordeColor);
     color: var(--blancoLetra);
 }
 
+/*where to add messages*/
+
 .chatmain {
     flex: 0 1 822px;
     height: 724px;
-    background-color: lightskyblue;
     border-top: 2px solid var(--bordeColor);
     border-bottom: 2px solid var(--bordeColor);
 }
