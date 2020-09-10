@@ -159,7 +159,7 @@ a {
 
 .maincontent {
     flex: 0 1 1440px;
-    height: 850px;
+    height: 940px;
     margin: auto;
 }
 
@@ -188,8 +188,33 @@ a {
 .dashboards {
     flex: 0 0 196px;
     height: 330px;
-    background-color: white;
 }
+
+.dashboardstitle {
+    flex: 0 0 196px;
+    height: 60px;
+    font-family: "robotomedium";
+    font-size: 13px;
+    color: var(--grisLetra);
+    padding-left: 30px;
+    line-height: 80px;
+}
+
+.dashboardscontent {
+    flex: 0 0 196px;
+    height: 250px;
+    font-family: "robotomedium";
+    font-size: 13px;
+    color: var(--blancoLetra);
+    padding: 20px 0px 0 30px;
+    line-height: 33px;
+}
+
+.dashboardscontent a {
+    text-decoration: none;
+    color: var(--blancoLetra);
+}
+
 .contacts {
     flex: 0 0 196px;
     height: 536px;
@@ -201,9 +226,11 @@ a {
     flex: 0 0 196px;
     height: 70px;
     font-family: "robotomedium";
+    font-size: 13px;
     color: var(--grisLetra);
     padding-left: 30px;
     line-height: 80px;
+    
 }
 
 .contactbox {
@@ -254,3 +281,141 @@ a {
 
 /*main stuff*/
 
+.maincontainer {
+    flex: 0 0 1110px;
+    height: 880px;
+    margin: 30px
+}
+
+.mainupperthings {
+    flex: 0 0 1110px;
+    height: 100px;
+}
+
+.titlelogo {
+    flex: 0 0 50px;
+    height: 100px;
+    line-height: 105px;
+    text-align: center;
+}
+
+.titlelogo img {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titlemain {
+    flex: 0 0 170px;
+    height: 100px;
+    line-height: 96px;
+    font-family: "robotomedium";
+    color: var(--blancoLetra);
+    font-size: 10pt;
+    margin-left: 10px;
+    
+}
+
+.titlecalendar {
+    flex: 0 0 695px;
+    height: 100px;
+    padding-left: 15px;
+    line-height: 100px;
+}
+
+.titlecalendar button {
+    width: 340px;
+    height: 40px;
+    font-family: "robotobold";
+    font-size: 9pt;
+    border-radius: 30px;
+    word-spacing: 30px;
+    color: var(--grisLetra);
+    background-color: transparent;
+    border: 1px solid var(--bordeColor);
+    outline: none;
+    cursor:pointer;
+}
+
+.titlewidgetadder {
+    flex: 0 0 170px;
+    height: 100px;
+    line-height: 95px;
+    text-align: right;
+}
+
+.titlewidgetadder button {
+    width: 140px;
+    height: 40px;
+    font-family: "robotobold";
+    font-size: 9pt;
+    border-radius: 30px;
+    color: var(--grisLetra);
+    background-color: transparent;
+    border: 1px solid var(--bordeColor);
+    outline: none;
+    cursor:pointer;
+}
+
+.squarecloser {
+    flex: 0 0 1110px;
+    height: 190px;
+    text-align: center;
+    justify-content: center;
+}
+
+.squarestat {
+    flex:0 0 160px;
+    height: 160px;
+    line-height: 30px;
+    background-color: var(--azulTabs);
+    margin: auto;
+    font-family: "robotomedium";
+}
+
+.squarestat p {
+    color: var(--grisLetra);
+    font-size: 10pt;
+}
+.squarestat h3 {
+    color: var(--blancoLetra);
+    font-size: 18pt;
+}
+
+.squarestat img {
+    width: 7%;
+}
+
+.bigstats {
+    flex: 0 0 1110px;
+    height: 310px;
+}
+
+.biggraphs {
+    flex: 0 0 1110px;
+    height: 280px;
+}
+
+.biggraphs img {
+    height: 99.6%;
+    float: left;
+}
+
+.mediumgraphs {
+    flex: 0 0730px;
+    height: 280px;
+}
+
+.mediumgraphs img {
+    height: 100%;
+}
+
+.smallgraphs {
+flex: 0 0 350px;
+height: 280px;
+margin-left: 30px;
+}
+
+.smallgraphs img {
+    height: 100%;
+}
